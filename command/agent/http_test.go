@@ -267,8 +267,8 @@ func TestContentTypeIsJSON(t *testing.T) {
 
 	contentType := resp.Header().Get("Content-Type")
 
-	if contentType != "application/json" {
-		t.Fatalf("Content-Type header was not 'application/json'")
+	if contentType != "application/json;charset=utf-8" {
+		t.Fatalf("Content-Type header was not 'application/json;charset=utf-8'")
 	}
 }
 

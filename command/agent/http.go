@@ -357,7 +357,7 @@ func (s *HTTPServer) wrap(handler func(resp http.ResponseWriter, req *http.Reque
 			if err != nil {
 				goto HAS_ERR
 			}
-			resp.Header().Set("Content-Type", "application/json")
+			resp.Header().Set("Content-Type", "application/json;charset=utf-8")
 			resp.Write(buf)
 		}
 	}
